@@ -1,0 +1,41 @@
+#loginform {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  top: 0px;
+}
+
+.appName {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10vw;
+  top: -30vh;
+  color: white;
+  text-shadow: 10px 5px 10px black;
+}
+
+.clicktwice {
+  font-size: 1vw;
+  color: white;
+  text-shadow: 3px 3px 5px black;
+  margin-bottom: 10px;
+}
+
+#idinput {
+  margin-bottom: 10px;
+  border-radius: 40px;
+}
+
+#passwordinput {
+  margin-bottom: 10px;
+  border-radius: 40px;
+}

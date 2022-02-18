@@ -1,0 +1,21 @@
+.backgroundimage {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.randombackgroundimage {
+  width: auto;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+.randomlogindimage {
+  width: auto;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
