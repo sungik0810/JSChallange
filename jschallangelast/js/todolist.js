@@ -1,39 +1,65 @@
 const todoinput = document.querySelector(".todoinput")
 const todolistup = document.querySelector(".todolistup")
 const list = document.querySelector(".list")
-const todoLocalStorage =[]
+let todoArray = []
 
+// delete function 
+function deleteButton(event){
+    const litarget = event.target.parentElement
+    litarget.remove()
 
-function makeNew(newToDo){
-    let makeNewLine = document.createElement("li");
-    let makeNewText = document.createElement("span");
-    let makeNewDeleteButton = document.createElement("button")
-    makeNewLine.appendChild(makeNewText)
-    makeNewText.innerText = newToDo;
-    makeNewDeleteButton.innerText = "X";
-    makeNewLine.classList.add("li")
-    makeNewText.classList.add("span")
-    makeNewDeleteButton.classList.add("button")
-    makeNewLine.appendChild(makeNewDeleteButton)
-    list.appendChild(makeNewLine);
-    
+    todoArray = todoArray.filter((toDo) => toDo.id !== parseInt(litarget.id));
+    console.log(todoArray)
+    localStorage.setItem("todolist",JSON.stringify(todoArray))
 }
 
+// create new list line on browser && if click the button, delete line on browser 
+function makeNew(newToDo){
+    const makeNewLine = document.createElement("li");
+    makeNewLine.classList.add("li")
+    makeNewLine.id = newToDo.id
+    
+    
+    const makeNewText = document.createElement("span");
+    makeNewText.innerText = newToDo.text;
+    makeNewText.classList.add("span")
+    
+
+    const makeNewDeleteButton = document.createElement("button")
+    makeNewDeleteButton.innerText ="X";
+    makeNewDeleteButton.classList.add("deletebutton")
+
+    makeNewDeleteButton.addEventListener("click",deleteButton)
+
+    list.appendChild(makeNewLine);
+    makeNewLine.appendChild(makeNewText)
+    makeNewLine.appendChild(makeNewDeleteButton)
+}
+
+//push on localStorage && execute to make new line 
 function listup(event){
     event.preventDefault();
-    event.preventDefault();
     let todoinputvalue = todoinput.value;
-    localStorage.setItem("todolist",todoLocalStorage)
-    todoinput.value = "";
-    makeNew(todoinputvalue);
-
-    
-    
+    todoinput.value ="";
+    const newToDoObj = {
+        text : todoinputvalue,
+        id : Date.now(),
+    };
+    todoArray.push(newToDoObj);
+    makeNew(newToDoObj);
+    localStorage.setItem("todolist",JSON.stringify(todoArray)) // make String including "[""]"
 }
-
-
-
-
-
 document.addEventListener("submit",listup)
 
+
+
+// just showing localstorage value on browser(list)
+const saveToDos = localStorage.getItem("todolist")
+
+if(saveToDos !== null){
+    let parsedToDos = JSON.parse(saveToDos) // again make Array 
+    todoArray = parsedToDos // todoArray = [] -> todoArray = [saving thing,...]
+    parsedToDos.forEach(makeNew) // parsedToDos.forEach((item) => makeNew(item)) short cut -> don't need function name
+    //localStorage.setItem("todolist",JSON.stringify(parsedToDos))
+    
+}

@@ -9,24 +9,34 @@
     <link rel="stylesheet" href="css/timer.css" />
     <link rel="stylesheet" href="css/body.css" />
     <link rel="stylesheet" href="css/todolist.css" />
+    <link rel="stylesheet" href="css/weather.css" />
   </head>
   <body class="body">
+    <div id="weathercss">
+      <div id="weather">
+        <span></span>
+        <div id="weatherpicture">
+          <img class="weatherimg" src="" />
+        </div>
+        <span id="weathername"></span>
+      </div>
+    </div>
     <form class="todolist">
       <input type="text" placeholder="push" class="todoinput" />
       <input type="submit" class="todolistup" value="todo" />
     </form>
     <ul class="list"></ul>
     <time class="timer">
-      <time class="time">00:00:00</time>
-      <time class="date">00 / 00 (day)</time>
       <time class="year">0000</time>
+      <time class="date">00 / 00 (day)</time>
+      <time class="time">00:00:00</time>
     </time>
     <figure class="backgroundimage">
-      <img class="randomloginimage" src="" />
       <img class="randombackgroundimage" src="" />
     </figure>
     <script src="js/time.js"></script>
     <script src="js/backgroundimage.js"></script>
     <script src="js/todolist.js"></script>
+    <script src="js/weather.js"></script>
   </body>
 </html>

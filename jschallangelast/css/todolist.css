@@ -18,27 +18,36 @@
 }
 
 .list {
-  position: absolute;
-  width: 85%;
-  height: 30%;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
   margin: 0%;
   display: flex;
   flex-direction: column;
-  bottom: 10vh;
-
   z-index: 2;
+  padding-right: 0px;
+  padding-left: 0px;
+  align-items: center;
+  top: 60vh;
 }
 
 .todolistup {
-  width: 20%;
+  width: 10%;
   height: 5vh;
-  margin-left: 74%;
+  margin-left: 70%;
 }
 
 .li {
-  margin-bottom: 8px;
+  margin-bottom: 20px;
   border-bottom: 1px solid black;
-  width: 90%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
+}
+
+.span {
+  font-size: 4vh;
+  color: white;
+  text-shadow: 4px 4px 5px black;
+  -webkit-text-stroke: 0.4px #000;
 }

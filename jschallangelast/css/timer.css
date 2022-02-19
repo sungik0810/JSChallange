@@ -6,8 +6,10 @@
   align-items: center;
   justify-content: flex-start;
   position: fixed;
-  margin-top: 70px;
+
   color: white;
+  z-index: 1;
+  top: 20px;
 }
 
 .year {
@@ -20,11 +22,10 @@
   font-size: 6vh;
   text-shadow: 10px 5px 10px black;
   margin-left: 2vw;
-  margin-bottom: -0.1%;
+  margin-bottom: -3.5%;
 }
 
 .time {
   font-size: 10vh;
   text-shadow: 10px 5px 10px black;
-  margin-bottom: -1.3%;
 }
