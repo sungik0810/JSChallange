@@ -1,5 +1,7 @@
 # JSChallange
 
+watch mobile mode -> F12 , Ctrl+Shift+M
+
 git-hub pages on branches name"new"
 
 
