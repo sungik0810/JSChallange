@@ -14,6 +14,14 @@ function onGeoOk(position){
 
         if(weather.innerText == "Clouds"){
             document.querySelector(".weatherimg").setAttribute("src","https://img.icons8.com/external-justicon-flat-justicon/64/000000/external-cloud-weather-justicon-flat-justicon-2.png");
+        } else if(weather.innerText == "Clear"){
+            document.querySelector(".weatherimg").setAttribute("src","https://img.icons8.com/external-flat-icons-inmotus-design/67/000000/external-hot-weather-nature-flat-icons-inmotus-design.png");
+        } else if(weather.innerText == "Rain" ){
+            document.querySelector(".weatherimg").setAttribute("src","https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/58/000000/external-rain-jungle-vitaliy-gorbachev-flat-vitaly-gorbachev.png");
+        }else if(weather.innerText == "Snow" ){
+            document.querySelector(".weatherimg").setAttribute("src","https://img.icons8.com/external-icongeek26-flat-icongeek26/64/000000/external-snow-alaska-icongeek26-flat-icongeek26.png");
+        }else if(weather.innerText == "Thunderstorm" ){
+            document.querySelector(".weatherimg").setAttribute("src","https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-storm-weather-justicon-lineal-color-justicon.png");
         }
 
     });

@@ -35,19 +35,45 @@
   width: 10%;
   height: 5vh;
   margin-left: 70%;
+  border-radius: 10px;
+  padding-left: 2px;
+  box-shadow: inset 0px 0px 20px black;
+  background-color: royalblue;
 }
 
 .li {
   margin-bottom: 20px;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
   width: 50%;
   display: flex;
   justify-content: space-between;
+  background-color: rgba(200, 200, 200, 0.3);
+  border-radius: 6px;
+  box-shadow: 1vw 0.5vh 10px black;
 }
 
 .span {
-  font-size: 4vh;
+  font-size: 3vh;
   color: white;
+  text-shadow: 2px 2px 5px black;
+
+  padding-left: 6px;
+  margin-bottom: 2px;
+}
+
+.deletebutton {
+  border-radius: 20%;
+  background-color: crimson;
+  box-shadow: inset 1px 0px 5px black;
+}
+
+.todoinput {
+  border-radius: 10px;
+  background-color: rgba(200, 200, 200, 0.7);
+  box-shadow: 4px 4px 5px black;
+  font-size: 3vh;
+  color: whitesmoke;
   text-shadow: 4px 4px 5px black;
-  -webkit-text-stroke: 0.4px #000;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 8px;
 }

@@ -21,6 +21,7 @@
 #weathername {
   position: fixed;
   padding: 4vh;
+  text-shadow: 1px 1px 3px black;
 }
 
 #weatherpicture {

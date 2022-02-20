@@ -10,33 +10,44 @@
     <link rel="stylesheet" href="css/body.css" />
     <link rel="stylesheet" href="css/todolist.css" />
     <link rel="stylesheet" href="css/weather.css" />
+    <link rel="stylesheet" href="css/pageright.css" />
   </head>
   <body class="body">
-    <div id="weathercss">
-      <div id="weather">
-        <span></span>
-        <div id="weatherpicture">
-          <img class="weatherimg" src="" />
-        </div>
-        <span id="weathername"></span>
-      </div>
+    <div class="secondwindow">
+      <figure class="backgroundimage">
+        <img class="randombackgroundimage" src="" />
+      </figure>
     </div>
-    <form class="todolist">
-      <input type="text" placeholder="push" class="todoinput" />
-      <input type="submit" class="todolistup" value="todo" />
-    </form>
-    <ul class="list"></ul>
-    <time class="timer">
-      <time class="year">0000</time>
-      <time class="date">00 / 00 (day)</time>
-      <time class="time">00:00:00</time>
-    </time>
-    <figure class="backgroundimage">
-      <img class="randombackgroundimage" src="" />
-    </figure>
+    <div class="mainwindow">
+      <button class="pageright"></button>
+      <button class="pageleft"></button>
+      <div id="weathercss">
+        <div id="weather">
+          <span></span>
+          <div id="weatherpicture">
+            <img class="weatherimg" src="" />
+          </div>
+          <span id="weathername"></span>
+        </div>
+      </div>
+      <form class="todolist">
+        <input type="text" placeholder="" class="todoinput" />
+        <input type="submit" class="todolistup" value="" />
+      </form>
+      <ul class="list"></ul>
+      <time class="timer">
+        <time class="year">0000</time>
+        <time class="date">00 / 00 (day)</time>
+        <time class="time">00:00:00</time>
+      </time>
+      <figure class="backgroundimage">
+        <img class="randombackgroundimage" src="" />
+      </figure>
+    </div>
     <script src="js/time.js"></script>
     <script src="js/backgroundimage.js"></script>
     <script src="js/todolist.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/pageright.js"></script>
   </body>
 </html>

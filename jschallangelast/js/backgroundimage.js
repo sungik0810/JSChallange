@@ -22,7 +22,7 @@ if(thisfilefullname == "id.html" || thisfilefullname == "id.html?"){
     
     function randomloginImage(){
         const loginImage = document.querySelector(".randomloginimage");
-        const images = ["00.jpg","01.jpg","02.jpg"];
+        const images = ["03.jpg","04.jpg","05.jpg","06.jpg"];
         let randomNumtwo = Math.floor(Math.random()*images.length);
         let randomImagetwo = images[randomNumtwo]
         loginImage.src = `img/${randomImagetwo}`;

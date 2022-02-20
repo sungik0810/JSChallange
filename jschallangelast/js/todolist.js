@@ -9,7 +9,6 @@ function deleteButton(event){
     litarget.remove()
 
     todoArray = todoArray.filter((toDo) => toDo.id !== parseInt(litarget.id));
-    console.log(todoArray)
     localStorage.setItem("todolist",JSON.stringify(todoArray))
 }
 
@@ -26,7 +25,7 @@ function makeNew(newToDo){
     
 
     const makeNewDeleteButton = document.createElement("button")
-    makeNewDeleteButton.innerText ="X";
+    makeNewDeleteButton.innerText ="　";
     makeNewDeleteButton.classList.add("deletebutton")
 
     makeNewDeleteButton.addEventListener("click",deleteButton)
