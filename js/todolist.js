@@ -48,7 +48,7 @@ function listup(event){
     makeNew(newToDoObj);
     localStorage.setItem("todolist",JSON.stringify(todoArray)) // make String including "[""]"
 }
-document.addEventListener("submit",listup)
+document.querySelector(".todolist").addEventListener("submit",listup)
 
 
 

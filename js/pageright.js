@@ -1,10 +1,10 @@
 
 
 function pageright(){
-    if(window.getComputedStyle(document.querySelector(".mainwindow")).right == "0px"){
-        document.querySelector(".mainwindow").style.right = "100vw";
-    } else if(window.getComputedStyle(document.querySelector(".mainwindow")).right == `${window.innerWidth}px`){
-        document.querySelector(".mainwindow").style.right = "200vw";
+    if(window.getComputedStyle(document.querySelector(".mainwindow")).display == "flex"){
+        document.querySelector(".mainwindow").style.display = "none";
+        document.querySelector(".secondwindow").style.display = "flex";
+        console.log("gg")
     }
 }
 //window.getComputedStyle(document.querySelector(".body")).right
@@ -14,13 +14,9 @@ document.querySelector(".pageright").addEventListener("click",pageright);
 
 let widths = window.innerWidth;
 function pageleft(){
-    if(window.getComputedStyle(document.querySelector(".mainwindow")).right == "0px"){
-    } else if(window.getComputedStyle(document.querySelector(".mainwindow")).right == `${widths}px`){
-        console.log("gdsdd")
-        document.querySelector(".mainwindow").style.right = "0vw";
-    } else if(window.getComputedStyle(document.querySelector(".mainwindow")).right == `${parseInt(widths)*2}px`){
-        document.querySelector(".mainwindow").style.right = "100vw";
-        console.log("gds")
+    if(window.getComputedStyle(document.querySelector(".mainwindow")).display == "none"){
+        document.querySelector(".mainwindow").style.display = "flex";
+        document.querySelector(".secondwindow").style.display = "none";
     }
 }
 document.querySelector(".pageleft").addEventListener("click",pageleft);

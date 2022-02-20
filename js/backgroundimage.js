@@ -9,11 +9,13 @@ if(thisfilefullname == "id.html" || thisfilefullname == "id.html?"){
     
     
     function randomBackgroundImage(){
-    const backgroundImage = document.querySelector(".randombackgroundimage");
+    const mainbackgroundImage = document.querySelector(".mainrandombackgroundimage");
+    const secondbackgroundImage = document.querySelector(".secondrandombackgroundimage");
     const images = ["00.jpg","01.jpg","02.jpg"];
     let randomNum = Math.floor(Math.random()*images.length);
     let randomImage = images[randomNum]
-    backgroundImage.src = `img/${randomImage}`;
+    mainbackgroundImage.src = `img/${randomImage}`;
+    secondbackgroundImage.src = `img/${randomImage}`;
     }
     //document.addEventListener("submit",randomBackgroundImage);
     randomBackgroundImage();
