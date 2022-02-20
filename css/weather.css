@@ -1,0 +1,36 @@
+#weathercss {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  padding: 0 30%;
+  top: 38vh;
+
+  display: flex;
+  justify-content: center;
+}
+
+#weather {
+  width: 100%;
+  position: inherit;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-shadow: 8px 4px 4px black;
+}
+
+#weathername {
+  position: fixed;
+  padding: 4vh;
+  text-shadow: 1px 1px 3px black;
+}
+
+#weatherpicture {
+  margin: 0;
+  position: fixed;
+
+  width: 50vw;
+  height: 10vh;
+  top: 27vh;
+  display: flex;
+  justify-content: center;
+}

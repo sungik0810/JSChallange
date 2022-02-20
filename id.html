@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chrome</title>
+    <link rel="stylesheet" href="css/backgroundimage.css" />
+    <link rel="stylesheet" href="css/timer.css" />
+    <link rel="stylesheet" href="css/body.css" />
+    <link rel="stylesheet" href="css/todolist.css" />
+    <link rel="stylesheet" href="css/weather.css" />
+    <link rel="stylesheet" href="css/pageright.css" />
+  </head>
+  <body class="body">
+    <div class="secondwindow">
+      <figure class="backgroundimage">
+        <img class="randombackgroundimage" src="" />
+      </figure>
+    </div>
+    <div class="mainwindow">
+      <button class="pageright"></button>
+      <button class="pageleft"></button>
+      <div id="weathercss">
+        <div id="weather">
+          <span></span>
+          <div id="weatherpicture">
+            <img class="weatherimg" src="" />
+          </div>
+          <span id="weathername"></span>
+        </div>
+      </div>
+      <form class="todolist">
+        <input type="text" placeholder="" class="todoinput" />
+        <input type="submit" class="todolistup" value="" />
+      </form>
+      <ul class="list"></ul>
+      <time class="timer">
+        <time class="year">0000</time>
+        <time class="date">00 / 00 (day)</time>
+        <time class="time">00:00:00</time>
+      </time>
+      <figure class="backgroundimage">
+        <img class="randombackgroundimage" src="" />
+      </figure>
+    </div>
+    <script src="js/time.js"></script>
+    <script src="js/backgroundimage.js"></script>
+    <script src="js/todolist.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/pageright.js"></script>
+  </body>
+</html>

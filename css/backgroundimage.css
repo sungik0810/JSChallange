@@ -1,0 +1,24 @@
+.backgroundimage {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  overflow: clip;
+  z-index: -1;
+}
+
+.randombackgroundimage {
+  width: auto;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.randomlogindimage {
+  width: auto;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
